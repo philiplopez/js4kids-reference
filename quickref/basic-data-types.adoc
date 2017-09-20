@@ -1,0 +1,27 @@
+== Basic data types
+
+=== Strings (text)
+In many programming languages, text data are called "strings" since they are like strings of characters (single letters). In JavaScript, you can use single- or double-quotes but they must match.
+
+[source,javascript]
+----
+"Hello World" // double-quotes
+'Hello World' // single-quotes 
+----
+
+=== Numbers
+JavaScript has only one data type for numbers.
+[source,javascript]
+----
+5    // positive integer number
+5.01 // positive decimal number
+-7.2 // negative decimal number
+----
+
+=== Boolean (true or false)
+Decisions are made using true/false values. 
+[source,javascript]
+----
+true    
+false   
+----

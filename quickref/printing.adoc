@@ -1,0 +1,6 @@
+== Printing text
+
+[source,javascript]
+----
+console.log("Hello, World");
+----

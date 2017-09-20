@@ -1,0 +1,12 @@
+# JavaScript for Kids - Reference
+
+Learning a programming language can be hard. To start, you need to know:
+
+* how to actually create and run code
+
+* _syntax_, which is the set of rules for writing a valid program
+
+* how to use the _built-in functions_ in the language to do common tasks such as input and output, manipulate text, basic math, and so on.
+
+* how to install and use other _libraries_ of functions to simplify your own programs.
+

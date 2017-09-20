@@ -1,0 +1,15 @@
+== Running JavaScript code
+
+=== Command-line
+You need https://nodejs.org/en/[Node.js]
+to be installed to run JavaScript from the command-line (terminal).
+
+At the prompt, you run node and give it the path to a file, as follows:
+[source,bash]
+----
+node hello.js
+----
+
+=== Web browser
+* TBC - Link to browser console
+* TBC - Link to browser HTML...

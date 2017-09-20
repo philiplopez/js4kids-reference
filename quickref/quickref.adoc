@@ -1,0 +1,3 @@
+= Quick Reference
+
+Once you have learned to code in JavaScript or a similar programming languages, you often just need to have some examples of syntax and common built-in functions. We sometimes call this a "cheat sheet." In the following sections, we'll link to other sections of this JavaScript reference if you need more detail.

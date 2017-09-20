@@ -1,0 +1,13 @@
+== Comments
+
+In JavaScript, _comments_ are ignored so they can be used to describe the program to humans (including your future self!).
+
+[source,javascript]
+----
+// This is a single-line commment
+
+/*
+   This is a multi-line
+   comment
+*/
+----
