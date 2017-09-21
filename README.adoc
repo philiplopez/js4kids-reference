@@ -1,4 +1,4 @@
-# JavaScript for Kids - Reference
+# JavaScript for Kids (and other novices!) - Reference
 
 Learning a programming language can be hard. To start, you need to know:
 
@@ -10,3 +10,5 @@ Learning a programming language can be hard. To start, you need to know:
 
 * how to install and use other _libraries_ of functions to simplify your own programs.
 
+
+This is not a JavaScript _course_ but intended to be a reference while you are learning (and starting to use) JavaScript. It is targeted toward younger learners (not too much to read!) but can be used by anyone who is new to programming.

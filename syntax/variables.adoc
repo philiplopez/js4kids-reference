@@ -1,0 +1,28 @@
+TODO: rewrite/complete
+
+== Variables
+
+It is often useful to store the result of some link:./basic-expressions.adoc[expression] or call to a link:./functions.adoc[function]. We do this by storing the value in the computers _random access memory_ (RAM).
+
+When we store a value in the memory, it has to go at some _address_ (or _location_). We don't have to remember the address ourselves, however, since we can give it a _name_ (or _identifier_).
+
+For example:
+
+[source,javascript]
+----
+let givenName = "Ada";
+let familyName = "Lovelace";
+let fullName = givenName + " " + familyName;
+console.log(fullName); // prints "Ada Lovelace" to the console <1>
+----
+1. Ada Lovelace was the first programmer. She was born over 200 years ago!
+
+
+=== Constant 
+
+* const
+* val
+* NOTE: var (old)
+* NOTE: scope - disappears...
+
+

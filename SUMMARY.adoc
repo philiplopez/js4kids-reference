@@ -1,11 +1,17 @@
 = Summary
 
-. link:quickref/quickref.adoc[Quick Reference]
+. link:quickref/intro.adoc[Quick Reference]
 .. link:quickref/running.adoc[Running JavaScript Code]
 .. link:quickref/comments.adoc[Comments]
 .. link:quickref/printing.adoc[Printing Text]
 .. link:quickref/basic-data-types.adoc[Basic Data Types]
 .. link:quickref/basic-expressions.adoc[Basic Expressions]
+.. link:quickref/variables.adoc[Variables]
+.. link:quickref/decisions.adoc[Making Decisions]
+.. link:quickref/loops.adoc[Loops for Repetition]
+.. link:quickref/functions.adoc[Functions]
+.. link:quickref/node-readline[Text Input (Node.js)]
+.. link:quickref/data-structures.adoc[Data Structures]
 
 . link:syntax/syntax-intro.adoc[Syntax]
 

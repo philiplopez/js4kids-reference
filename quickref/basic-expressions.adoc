@@ -44,3 +44,47 @@ true || false   // true
 false || true   // true
 false || false  // false
 ----
+
+
+=== Relational expressions
+
+You often want to compare two different values, particularly _link:./variables.adoc[variables]_ so JavaScript provides some operators for that.
+
+==== Equality and inequality
+
+Use `===` (equal?) and `!==` (not equal?) to test for equality. For example:
+
+[source,javascript]
+----
+"a" === "a" // true
+"a" !== "b" // also true
+"b" !== "b" // false
+----
+
+WARNING: The `=` operator is for _assigning variables_ and does not test whether two values are equal. 
+
+WARNING: Like many languages, JavaScript also has a `==` operator (and `!=`). However, it can do very strange things, so avoid using it.
+
+
+==== Greater/less than
+
+Rather than testing whether two values are equal, we can test whether one is greater than the other. (This should really only be used with _numbers_ although JavaScript allows it on other data types!)
+
+[source,javascript]
+----
+5 > 2 // true
+2 > 5 // false
+5 > 5 // false
+
+5 < 2 // false
+2 < 5 // true
+5 < 5 // false
+
+5 >= 2 // true
+2 >= 5 // false
+5 >= 5 // true - different from >
+
+5 <= 2 // false
+2 <= 5 // true
+5 <= 5 // true - different from <
+----

@@ -1,0 +1,63 @@
+== Variables
+
+In modern JavaScript, we use two different keywords when naming memory variables:
+
+* `const` (for _constant_) should be used when the value in memory will not change
+* `let` should be used when the value in memory _might_ change 
+
+We first _declare_ a variable and can _assign_ it a value. Typically, we do this in a single statement as shown in the example below. We then use the variable in an expression and JavaScript will _replace_ the variable name by first looking up the value in memory.
+
+Variable names are often known as _identifiers_.
+
+[source,javascript]
+----
+const fullName = "Ada" + " " + "Lovelace"; // <1>
+console.log(fullName); // <2>
+----
+1. `fullName` is the _identifier_ given to the location in memory where the value `"Ada Lovelace"` will be stored. Since we used the `const` keyword, we cannot change the value for fullName in the same scope.
+2. We print out "Ada Lovelace" because we _use_ it as an input to `console.log(...)`.
+
+
+=== Constant versus non-constant variables
+
+Constants must be initialised and cannot changed. For example:
+
+[source,javascript]
+----
+const a; // ERROR!
+const b = 1; // OK
+b = 2; // ERROR!
+----
+
+Programs are often easier to read when values in memory _do not_ change, so use `const` as much as possible.
+
+Variables that are _not_ constants _can_ change. For example:
+
+[source,javascript]
+----
+let a; // OK
+a = 1; // OK
+a = 2; // OK
+console.log(a); // prints out 2
+----
+
+
+[source,javascript]
+----
+let givenName = "Ada";
+let familyName = "Lovelace";
+let fullName = givenName + " " + familyName;
+console.log(fullName); // prints "Ada Lovelace" to the console <1>
+----
+1. Trivia: Ada Lovelace was the first programmer. She was born over 200 years ago!
+
+
+=== Scope 
+
+Variables declared with `const` or `let` are "block-scoped." This means that the name only has meaning in the _block_ in which it is declared. A _block_ is a group of statements surrounded by curly braces, `{ ... }`.
+
+
+=== The old `var` keyword
+
+Where possible, use `const` and, if you really must, `let`. However, these have only been available in JavaScript since around 2015 (depending on the web browser or Node.js version). Before then, JavaScript had a single variable keyword called `var`. It is similar to `let` in that the identifier can assigned to different values in your code. However, `var` can behave unexpectedly due to something called "hoisting".
+

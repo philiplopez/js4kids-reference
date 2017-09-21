@@ -1,5 +1,7 @@
 == Printing text
 
+The `console` object has a `log` function that takes one or more arguments that will print out.
+
 [source,javascript]
 ----
 console.log("Hello, World");

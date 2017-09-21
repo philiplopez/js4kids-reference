@@ -11,5 +11,5 @@ node hello.js
 ----
 
 === Web browser
-* TBC - Link to browser console
-* TBC - Link to browser HTML...
+* TODO - Link to browser console
+* TODO - Link to browser HTML...

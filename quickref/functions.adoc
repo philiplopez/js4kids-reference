@@ -1,0 +1,24 @@
+== Functions
+
+Functions are like little _machines_ that take in one or more inputs, and produce some output. They can also have _side-effects_, which cause changes to the running JavaScript program or even do something outside it (like draw or print text on the screen, or play a sound).
+
+
+=== Calling a Function
+
+[source,javascript]
+----
+// console.log(....) only has side-effects
+// it prints out the inputs to the console
+console.log("A", "B", "C"); // three inputs
+
+// Math.min(...) returns the lowest number
+const minimum = Math.min(3, 8, 4, 19, 2);
+// minimum = 2
+----
+
+
+== Defining a Function
+
+JavaScript has a number of different ways to define (make) a function.
+
+TODO
