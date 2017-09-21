@@ -15,7 +15,9 @@ An _expression_ produces a new value.
 3 + 2 // add: produces 5
 3 - 2 // subtract: produces -1
 3 * 2 // multiply: produces 6
+  // '*' is called asterisk and is usually SHIFT+8 on keyboard
 3 / 2 // divide: produces 1.5
+  // '/' is called a forward-slash and found below '?' on keyboard
 3 % 2 // modulo (whole-number remainder of divide): produces 1
 ----
 
