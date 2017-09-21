@@ -1,3 +1,71 @@
 == Decisions
 
-TODO
+=== The simple `if` statement
+
+When you want to do something if some _condition_ has been met, use the `if` statement. For example:
+
+[source,javascript]
+----
+const age = 9
+
+if (age >= 13) {
+    console.log("You are a teenager or older");
+}
+// will not print anything!
+----
+
+
+=== The `if/else` statement
+
+Adding `else` allows you to do something if the condition is _not_ met:
+
+[source,javascript]
+----
+const age = 9
+
+if (age >= 13) {
+    console.log("You are a teenager or older");
+} else {
+    console.log("You are 12 or younger.");
+}
+// will print "You are 12 or younger."
+----
+
+
+=== if else if else if ...
+
+Things can get complicated!
+
+[source,javascript]
+----
+const age = 20;
+
+let message = ""
+if (age < 13) {
+    message = "Not yet a teenager.";
+} else if (age < 20) {
+    message = "Teenager";
+} else if (age < 30) { 
+    message = "Twenties";
+} else if (age < 40) {
+    message = "Thirties";
+} else {
+    message = "40s or older";
+}
+console.log(message);
+// Will print "Twenties"
+----
+
+
+=== The ternery expression
+
+If all you need to do is assign a value to a variable, use the ternery statement (`?:`). This also means you can use `const` instead of `let`:
+
+[source,javascript]
+----
+const age = 14
+const message = (age > 13)
+              ? "Teenager or older"
+              : "12 or younger";
+// message == "Teenager or older"
+----
