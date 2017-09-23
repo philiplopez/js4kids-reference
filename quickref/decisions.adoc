@@ -57,7 +57,7 @@ console.log(message);
 ----
 
 
-=== The ternery expression
+=== The ternary expression
 
 If all you need to do is assign a value to a variable, use the ternery statement (`?:`). This also means you can use `const` instead of `let`:
 

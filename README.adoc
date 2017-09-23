@@ -1,4 +1,4 @@
-# JavaScript for Kids (and other novices!) - Reference
+# JavaScript for Kids - Reference
 
 Learning a programming language can be hard. To start, you need to know:
 

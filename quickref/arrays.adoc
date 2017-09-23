@@ -1,0 +1,14 @@
+== Arrays
+
+_Arrays_ are used to store lists of data items. Each item of data is typically of the same type as the others. You usually access items in an array by position.
+
+
+=== Array literals for creation
+
+
+
+=== Accessing items by index
+
+
+=== Arrays are dynamic
+

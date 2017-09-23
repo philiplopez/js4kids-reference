@@ -8,10 +8,11 @@
 .. link:quickref/basic-expressions.adoc[Basic Expressions]
 .. link:quickref/variables.adoc[Variables]
 .. link:quickref/decisions.adoc[Making Decisions]
+.. link:quickref/objects.adoc[Objects]
+.. link:quickref/arrays.adoc[Arrays]
 .. link:quickref/loops.adoc[Loops for Repetition]
 .. link:quickref/functions.adoc[Functions]
 .. link:quickref/node-readline[Text Input (Node.js)]
-.. link:quickref/data-structures.adoc[Data Structures]
 
 . link:syntax/syntax-intro.adoc[Syntax]
 

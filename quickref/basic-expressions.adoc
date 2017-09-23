@@ -1,6 +1,8 @@
 == Basic expressions
 An _expression_ produces a new value.
 
+Keep in mind that some operators will occur _before_ others so you may need to _group_ expressions using round brackets (parentheses `()`).
+
 === String concatenation (joining)
 [source,javascript]
 ----
@@ -21,7 +23,17 @@ An _expression_ produces a new value.
 3 % 2 // modulo (whole-number remainder of divide): produces 1
 ----
 
+Like in mathematics, multiplication/division occur before addition/subtraction, so use parentheses:
+
+[source,javascript]
+----
+2 + 3 * 4 // == 2 + 12 == 14
+(2 + 3) * 4 // == 5 * 4 == 20
+----
+
 === Boolean expressions
+
+The _and_ and _or_ operators take two boolean values (or expressions) and provide a new boolean value.
 
 ==== Boolean _and_
 The "and" (`&&`) operator returns true only if both sides are true.
@@ -48,7 +60,7 @@ false || false  // false
 
 === Relational expressions
 
-You often want to compare two different values, particularly _link:./variables.adoc[variables]_ so JavaScript provides some operators for that.
+You often want to compare two different values, particularly _link:./variables.adoc[variables]_ so JavaScript provides some operators for that. These operators take two values/expressions (ideally numeric) and provide a new boolean value.
 
 ==== Equality and inequality
 

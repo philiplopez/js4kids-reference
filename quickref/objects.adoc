@@ -1,0 +1,63 @@
+== Objects
+
+_Objects_ store data items by name. They are like records storing multiple fields that can be of different data types.
+
+=== Object literals for creation
+
+The easiest way to create an object in JavaScript is to use the _object literal_ using curly braces. Each field has a _name_ (often called a _key_) and a _value_.
+
+[source,javascript]
+----
+const book = {
+    title: "Harry Potter and the Philosopher's Stone",
+    author: "J.K. Rowling",
+    "yearPublished": 1997
+}
+----
+
+In the above example, we are creating a variable called `book` that will store an object with three fields with names (or keys):
+
+* title (given a string value)
+* author (string value)
+* yearPublished (number value)
+
+NOTE: We separate these _key/value pairs_ using a comma `,`.
+
+NOTE: In JavaScript, you can use a string instead of an identifier.
+
+=== Accessing field values
+
+You can access an object's fields using either _dot_ notation or _index_ notation. Dot notation is more common.
+
+[source,javascript]
+----
+const book = { /* as above */ }
+
+// using "dot" notation
+console.log(book.author)
+// prints "J.K. Rowling"
+
+// using "index" notation (like arrays)
+console.log(book["author"])
+// also prints "J.K. Rowling"
+----
+
+=== Objects are dynamic
+
+Like most of JavaScript, objects can change their shape. For example:
+
+[source,javascript]
+----
+const person = {
+    givenName: "Harry",
+    familyName: "Potter"
+}
+// person has two fields
+
+
+person.yearOfBirth = 1987
+person.school = "Hogwarts"
+// person now has four fields
+----
+
+WARNING: Did you notice how we could modify the `person` object even though it was in a `const` variable?! We did _not_ assign a new value (object) to the `person` variable - we just changed it. This is something you can do with complex data types (objects and arrays). It _can_ lead to problems, so be warned!
