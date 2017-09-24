@@ -1,5 +1,12 @@
 == Running JavaScript code
 
+JavaScript is a programming language that needs to be _interpreted_ by some other computer program (the "JavaScript engine").
+
+You typically run JavaScript either:
+
+* in a web browser (such as Chrome, Safari, Firefox, Internet Explorer) 
+* at the command-line using Node.js
+
 === Command-line
 You need https://nodejs.org/en/[Node.js]
 to be installed to run JavaScript from the command-line (terminal).

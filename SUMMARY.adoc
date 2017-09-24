@@ -4,6 +4,7 @@
 .. link:quickref/running.adoc[Running JavaScript Code]
 .. link:quickref/comments.adoc[Comments]
 .. link:quickref/printing.adoc[Printing Text]
+.. link:quickref/lines.adoc[Lines and Semi-colons]
 .. link:quickref/basic-data-types.adoc[Basic Data Types]
 .. link:quickref/basic-expressions.adoc[Basic Expressions]
 .. link:quickref/variables.adoc[Variables]

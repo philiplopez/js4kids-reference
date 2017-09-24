@@ -1,14 +1,55 @@
 == Arrays
 
-_Arrays_ are used to store lists of data items. Each item of data is typically of the same type as the others. You usually access items in an array by position.
+_Arrays_ are used to store lists of data items. Each item of data is typically of the same type as the others. You usually access items in an array by its position.
 
 
 === Array literals for creation
 
+The easiest way to create an array is to use the _array literal_ as shown below:
+
+[source,javascript]
+----
+const names = ["Alice", "Bob", "Catherine"]
+
+const ages = [8, 7, 13]
+
+const books = [
+    { author: "J.K. Rowling", title: "Harry Potter and the Philosopher's Stone" },
+    { author: "J.K. Rowling", title: "Harry Potter and the Chamber of Secrets" }
+]
+----
 
 
 === Accessing items by index
 
+In JavaScript, you can access an item by its position in the array. This *starts* at 0 (not 1). For example:
 
-=== Arrays are dynamic
+[source,javascript]
+----
+// using the arrays defined above
+names[0] // == "Alice"
+names[2] // == "Catherine"
+names[3] // == undefined, only three elements!
+
+// can also combine with dot notation if useful
+books[1].author // == "J.K. Rowling"
+----
+
+In many cases, you will use a variable and a link:./loops.adoc[loop] to process an array using its index.
+
+=== An array has a length
+
+You can use the `.length` property of an array to find out how many items it has:
+
+[source,javascript]
+----
+// using the arrays defined above
+names.length    // == 3
+ages.length     // == 3
+books.length    // == 2
+----
+
+=== Arrays can change
+
+TBC
 

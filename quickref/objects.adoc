@@ -4,7 +4,7 @@ _Objects_ store data items by name. They are like records storing multiple field
 
 === Object literals for creation
 
-The easiest way to create an object in JavaScript is to use the _object literal_ using curly braces. Each field has a _name_ (often called a _key_) and a _value_.
+The easiest way to create an object in JavaScript is to use the _object literal_ using curly braces. Each field has a _name_ (often called a _key_) and a _value_, separated by a colon `:`.
 
 [source,javascript]
 ----
@@ -21,7 +21,7 @@ In the above example, we are creating a variable called `book` that will store a
 * author (string value)
 * yearPublished (number value)
 
-NOTE: We separate these _key/value pairs_ using a comma `,`.
+NOTE: We separate these _key:value pairs_ using a comma `,`.
 
 NOTE: In JavaScript, you can use a string instead of an identifier.
 
@@ -42,7 +42,7 @@ console.log(book["author"])
 // also prints "J.K. Rowling"
 ----
 
-=== Objects are dynamic
+=== Objects can change
 
 Like most of JavaScript, objects can change their shape. For example:
 

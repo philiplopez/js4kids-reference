@@ -1,8 +1,12 @@
 == Printing text
 
-The `console` object has a `log` function that takes one or more arguments that will print out.
+The `console` object has a `log` function that takes one or more arguments that will print out, separated by a single space.
 
 [source,javascript]
 ----
 console.log("Hello, World");
+    // prints "Hello, World"
+
+console.log("Hello", "Harry");
+    // prints "Hello Harry"
 ----
