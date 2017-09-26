@@ -19,7 +19,7 @@ An example:
 // an array of balloon colours
 const colours = ["red", "green", "blue", "yellow", "purple"];
 
-for (let i = 0; i < colours.length; i++) {
+for (let i = 0; i < colours.length; i = i + 1) {
     const balloonColour = colours[i];
     console.log(baloonColour);
 }
@@ -31,10 +31,33 @@ for (let i = 0; i < colours.length; i++) {
 // purple
 ----
 
-TODO: explanation
+A `for` loop has a number of parts:
+
+* initialisation: this is used for setting up the loop, typically a single variable, such as `let i = 0`.
+* loop condition: a Boolean expression that will be true only if the loop should continue (and the loop body executed), such as `i < colours.length`.
+* post-body actions: actions to occur after the loop body executes, such as incrementing (adding 1) the counter: `i = i + 1`. You _could_ do these in the loop.
+* the actual _body_ of the loop, which is a _block_ `{ ... }` of statements that will only execute if the loop condition was true.
 
 
 ==== Modern JavaScript: the for...of loop
+
+Looping through an array or other _iterable_ collection is fairly common. Modern JavaScript engines after 2015 _may_ allow the use of `for ... of` as follows:
+
+[source,javascript]
+----
+const colours = ["red", "green", "blue", "yellow", "purple"];
+for (const balloonColour of colours) {
+    console.log(balloonColour);
+}
+// will print out:
+// red
+// green
+// blue
+// yellow
+// purple
+----
+
+NOTE: Even though `balloonColour` will have a different value during each iteration of the loop, we can use `const` (instead of `let`) as JavaScript effectively creates a new variable each time.
 
 === The while loop
 
@@ -44,10 +67,10 @@ TODO: explanation
 ----
 let counter = 0;
 while (counter < 5) {
-    console.log(counter);
+    console.log("counter = ", counter);
     counter = counter + 1;
 }
-// will print out: 0, 1, 2, 3, 4, 5
+// will print out: 0, 1, 2, 3, 4
 ----
 
 === The do..while loop
