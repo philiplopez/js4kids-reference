@@ -12,7 +12,7 @@ const book = {
     title: "Harry Potter and the Philosopher's Stone",
     author: "J.K. Rowling",
     "yearPublished": 1997
-}
+};
 ----
 
 In the above example, we are creating a variable called `book` that will store an object with three fields with names (or keys):
@@ -34,11 +34,11 @@ You can access an object's fields using either _dot_ notation or _index_ notatio
 const book = { /* as above */ }
 
 // using "dot" notation
-console.log(book.author)
+console.log(book.author);
 // prints "J.K. Rowling"
 
 // using "index" notation (like arrays)
-console.log(book["author"])
+console.log(book["author"]);
 // also prints "J.K. Rowling"
 ----
 
@@ -51,12 +51,12 @@ Like most of JavaScript, objects can change their shape. For example:
 const person = {
     givenName: "Harry",
     familyName: "Potter"
-}
+};
 // person has two fields
 
 
-person.yearOfBirth = 1987
-person.school = "Hogwarts"
+person.yearOfBirth = 1987;
+person.school = "Hogwarts";
 // person now has four fields
 ----
 

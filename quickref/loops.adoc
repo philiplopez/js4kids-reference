@@ -1,3 +1,53 @@
 == Loops for Repetition
 
-=== 
+Computers excel at doing simple things many, many times (without getting bored!). Loops are often used to:
+
+* process collections of data (such as an array)
+* wait until some event occurs
+
+
+=== The for loop
+
+If you know how many times you need to do something, you should use a `for` loop. This is particularly useful for arrays.
+
+The first `for` loop syntax in JavaScript is based on the very old (1972!) syntax from the C programming language.
+
+An example:
+
+[source,javascript]
+----
+// an array of balloon colours
+const colours = ["red", "green", "blue", "yellow", "purple"];
+
+for (let i = 0; i < colours.length; i++) {
+    const balloonColour = colours[i];
+    console.log(baloonColour);
+}
+// will print out:
+// red
+// green
+// blue
+// yellow
+// purple
+----
+
+TODO: explanation
+
+
+==== Modern JavaScript: the for...of loop
+
+=== The while loop
+
+TODO: explanation
+
+[source,javascript]
+----
+let counter = 0;
+while (counter < 5) {
+    console.log(counter);
+    counter = counter + 1;
+}
+// will print out: 0, 1, 2, 3, 4, 5
+----
+
+=== The do..while loop

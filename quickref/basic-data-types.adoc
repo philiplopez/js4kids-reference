@@ -9,6 +9,13 @@ In many programming languages, text data are called "strings" since they are lik
 'Hello World' // single-quotes 
 ----
 
+Strings have a `length` property. For example:
+
+[source,javascript]
+----
+"abc".length // 3
+----
+
 === Numbers
 JavaScript has only one data type for numbers.
 [source,javascript]

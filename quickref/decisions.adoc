@@ -63,7 +63,7 @@ If all you need to do is assign a value to a variable, use the ternery statement
 
 [source,javascript]
 ----
-const age = 14
+const age = 14;
 const message = (age > 13)
               ? "Teenager or older"
               : "12 or younger";

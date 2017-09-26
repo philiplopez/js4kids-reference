@@ -9,14 +9,14 @@ The easiest way to create an array is to use the _array literal_ as shown below:
 
 [source,javascript]
 ----
-const names = ["Alice", "Bob", "Catherine"]
+const names = ["Alice", "Bob", "Catherine"];
 
-const ages = [8, 7, 13]
+const ages = [8, 7, 13];
 
 const books = [
     { author: "J.K. Rowling", title: "Harry Potter and the Philosopher's Stone" },
     { author: "J.K. Rowling", title: "Harry Potter and the Chamber of Secrets" }
-]
+];
 ----
 
 
@@ -51,5 +51,8 @@ books.length    // == 2
 
 === Arrays can change
 
-TBC
+TODO:
+
+* change item values (regardless of const)
+* push/pop
 

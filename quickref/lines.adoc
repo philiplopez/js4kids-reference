@@ -1,0 +1,16 @@
+== Lines and semi-colons
+
+In JavaScript, you can end a _statement_ with a semi-colon, or without one. If you don't put in a semi-colon, the JavaScript engine will _automatically insert_ them for you. It usually puts them in where you expect, but it may not! So, as a beginner, use semi-colons!
+
+[source,javascript]
+----
+// semi-colon at end
+console.log("Hello");
+
+// no semi-colon at end
+console.log("Hello")
+
+// Two lines of "Hello" will print out
+----
+
+Statements can be spread over multiple lines, but this can lead to bugs if the JavaScript can be interpreted in different ways.
