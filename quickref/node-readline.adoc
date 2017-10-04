@@ -1,3 +1,32 @@
 == Text Input (Node.js)
 
-TODO
+Node.js doesn't have an _easy_ way to read input from the command line, so we have to use a Node.js link:./node-packages.adoc[package].
+
+The package to use is called `readline-sync` so install it using the command-line in your JavaScript program directory:
+
+[source,bash]
+----
+npm install readline-sync
+----
+
+Now you can use the https://www.npmjs.com/package/readline-sync[various functions] such as the following:
+
+* question - gets the text string typed into the terminal
+* questionInt - waits until an integer (whole number) is typed into the terminal
+
+and many others.
+
+
+The simplest usage is as follows:
+
+[source,javascript]
+----
+// load the package (npm install first!)
+const r = require('readline-sync');
+
+const name = r.question("Your name? ");
+const age = r.questionInt("Your age? ");
+
+console.log("You are", name);
+console.log("You are", age, "years old");
+----

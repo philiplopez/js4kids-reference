@@ -13,7 +13,8 @@
 .. link:quickref/arrays.adoc[Arrays]
 .. link:quickref/loops.adoc[Loops for Repetition]
 .. link:quickref/functions.adoc[Functions]
-.. link:quickref/node-readline[Text Input (Node.js)]
+.. link:quickref/node-packages.adoc[Node Packages]
+.. link:quickref/node-readline.adoc[Text Input (Node.js)]
 
 . link:syntax/syntax-intro.adoc[Syntax]
 

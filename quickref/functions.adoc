@@ -50,7 +50,7 @@ const message = greetPerson("Lizzie");
 ----
 
 
-=== Anonymous function
+=== Anonymous functions
 
 JavaScript lets you refer to functions as _values_. This means we can store functions in _variables_. When we store a function in a variable, it doesn't really get a name. It is "anonymous."
 

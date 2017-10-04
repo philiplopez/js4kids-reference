@@ -1,0 +1,47 @@
+== Node Packages
+
+There are hundreds of thousands of packages for JavaScript published on the https://www.npmjs.com/[npm registry].
+
+A "package" (or "library", or "module") provides functions or other JavaScript objects to your program. 
+
+Node.js has built-in modules that provide more functionality than available in the web browser. Any JavaScript file you write can also be made into a Node.js module. This page is primarily aimed at using modules that you download via `npm` _packages_.
+
+=== Installing Packages
+
+To install a package, you need to run `npm` at the command-line (terminal) prompt. You should first be in the same directory (folder) as your JavaScript files.
+
+To change directories:
+
+[source,bash]
+----
+cd my-work
+----
+
+(This assumes that the directory `my-work` is a sub-directory of the current working directory.)
+
+Next, install the relevant package using the program `npm` (or `yarn` if you have installed it).
+
+[source,bash]
+----
+npm install readline-sync
+----
+
+This will download `readline-sync` package (latest version) and save it in the `node_modules` directory.
+
+Note: You can setup dependencies for your project using a `package.json` file that you can create using `npm init`.
+
+
+=== Using Packages
+
+In your JavaScript file, you load a module using the special `require(..)` function:
+
+[source,javascript]
+----
+const r = require('readline-sync');
+// r stores the exported object from the package
+
+// we can now access the functions in readline-sync:
+const name = r.question("Your name? ");
+----
+
+NOTE: Using Node.js packages  does *not* work when JavaScript is loaded in a web browser from a HTML file! However, there are _bundling_ tools such as WebPack that can be used to use Node.js packages in a website.
