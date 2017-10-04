@@ -3,7 +3,16 @@
 Functions are like little _machines_ that take in one or more inputs, and produce some output. They can also have _side-effects_, which cause changes to the running JavaScript program or even do something outside it (like draw or print text on the screen, or play a sound).
 
 
-=== Calling a Function
+=== Calling (running) a function
+
+Calling a function in JavaScript requires using parentheses (round brackets) `()` after the function's name:
+
+[source,javascript]
+----
+const aNumber = Math.random();
+----
+
+If you need to pass in any inputs, separate them with a comma:
 
 [source,javascript]
 ----
@@ -17,8 +26,76 @@ const minimum = Math.min(3, 8, 4, 19, 2);
 ----
 
 
-== Defining a Function
+== Defining a function
 
 JavaScript has a number of different ways to define (make) a function.
 
-TODO
+
+=== Standard named function
+
+You use the keyword `function` and the function name and parentheses with or without arguments.
+
+[source,javascript]
+----
+function greeting() {
+    return "Hello";
+}
+
+function greetPerson(name) {
+    return greeting() + " " + name;
+}
+
+const message = greetPerson("Lizzie");
+// message === "Hello Lizzie"
+----
+
+
+=== Anonymous function
+
+JavaScript lets you refer to functions as _values_. This means we can store functions in _variables_. When we store a function in a variable, it doesn't really get a name. It is "anonymous."
+
+You then call (run) the function by applying it to some inputs using `(...)`.
+
+[source,javascript]
+----
+const add = function(a, b) {
+    return a + b;
+}
+const plus = add; 
+// we give plus the same value
+
+add(2, 3);
+// === 5
+
+plus(4, 3);
+// === 7 
+----
+
+
+=== Arrow functions
+
+Modern JavaScript engies since 2015 have began to support a simple way to define anonymous functions:
+
+[source,javascript]
+----
+const helloName = (name) => {
+    return "Hello " + name;
+};
+const message = helloName("Fred");
+// message === "Hello Fred"
+----
+
+This style can be very useful when you need to pass a function to another function - such as an event handler or when iterating (looping), e.g.:
+
+[source,javascript]
+----
+const letters = ['a', 'b', 'c'];
+
+letters.forEach((letter) => { console.log(letter) });
+
+// prints out the following lines:
+// a
+// b
+// c
+----
+
