@@ -61,7 +61,9 @@ NOTE: Even though `balloonColour` will have a different value during each iterat
 
 === The while loop
 
-TODO: explanation
+`for` loops need to know how many times to repeat a block of code. However, when you want to keep repeating a block of code until something special happens, a `while` loop is a better fit. 
+
+In the example below, we _could_ use a `for` loop, but a `while` loop works just as well. Note that we have to increment the counter ourselves.
 
 [source,javascript]
 ----
@@ -73,4 +75,20 @@ while (counter < 5) {
 // will print out: 0, 1, 2, 3, 4
 ----
 
+The link:./basic-expressions.adoc[_boolean expression_] `(counter < 5)` is known as a _condition_. The loop will only run _while_ the condition is `true`. When the condition becomes `false`, the next statement (after the loop) is executed.
+
+NOTE: Be careful! If the _condition_ is _always_ true, your loop will never terminate! This is called an _infinite loop_ and you'll need to _terminate_ your process.
+
+
 === The do..while loop
+
+The `while` loop only executes the loop body when the condition is `true`. If the loop condition is not true when the `while` statement is executed, the loop body is _never_ run. If you need the loop body to always run _at least once_, use a `do {} while ()` loop as follows:
+
+[source,javascript]
+----
+do {
+    console.log("hello");
+} while (5 < 4);
+// Since 5 is not less than 4, the loop only runs once.
+----
+
